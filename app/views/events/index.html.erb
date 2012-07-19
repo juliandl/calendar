@@ -15,13 +15,6 @@
       <dd> <%= truncate(strip_tags(event.description),length: 80)%> </dd>
     </dl>
   <% end %>
-
-<!--
-<%= link_to 'Show', event %><br/>
-<%= link_to 'Edit', edit_event_path(event) %><br/>
-<%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %>
--->
-
 <br />
 
 <%= link_to 'New Event', new_event_path %>
