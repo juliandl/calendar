@@ -4,9 +4,9 @@
 
 jQuery ($) ->
 	toggleInfo = ->
-		$(".list_item .moreInfo").slideUp('fast')
-		console.log $(@).find('.moreInfo')
-		$(@).find('.moreInfo').slideToggle('fast')
+		if ($(@).find('.moreInfo').is(':hidden'))
+			$(".list_item .moreInfo").slideUp('fast')
+			$(@).find('.moreInfo').slideToggle('fast')
 
 	$(".list_item").click toggleInfo
 

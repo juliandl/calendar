@@ -9,6 +9,7 @@
           End: <%= event.end %><br/>
           Location: <%= event.location %><br/>
           Host: <%= event.host %><br/>
+          <%= link_to 'Edit', edit_event_path(event) %> <%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %>
         </div>
       </dd>
     </dl>
@@ -16,4 +17,5 @@
 <br />
 
 <%= link_to 'New Event', new_event_path %>
+
 
