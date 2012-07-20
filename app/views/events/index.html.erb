@@ -1,18 +1,16 @@
-
-<!--<div id="events"></div>
-<script type="text/javascript">
-  $(function() {
-    // Blog is the app name
-    window.router = new Calendar.Routers.EventsRouter({events: <%= @events.to_json.html_safe -%>});
-    Backbone.history.start();
-  });
-</script>-->
 <h1>Listing events</h1>
   <% @events.each do |event| %>
 
     <dl class = "list_item <%= cycle('list_line_odd', 'list_line_even') %>">
       <dt><%= event.name %></dt>
-      <dd> <%= truncate(strip_tags(event.description),length: 80)%> </dd>
+      <dd> <%= event.description%></div> 
+        <div class='moreInfo hidden'>
+          Start: <%= event.start %><br/>
+          End: <%= event.end %><br/>
+          Location: <%= event.location %><br/>
+          Host: <%= event.host %><br/>
+        </div>
+      </dd>
     </dl>
   <% end %>
 <br />

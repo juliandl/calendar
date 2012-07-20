@@ -8,18 +8,6 @@ body.events{
 		
 	}
 
-	table tr{
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px; 
-
-  		margin: 5px;
-	}
-	table tr td{
-		padding: 5px;
-		vertical-align: top;
-	}
-
 	dl.list_item {
 		padding: 5px;
 		-webkit-border-radius: 10px;
@@ -38,6 +26,10 @@ body.events{
 		}
 	}
 	
+	.hidden{
+		display: none;
+	}
+	
 	.list_action{
 		font-size: x-small;
 		text-align: right;
@@ -45,10 +37,10 @@ body.events{
 	}
 
 	dl.list_line_even{
-		background: #e0f8f8;
+		background: #E0E8F8;
 	}
 
 	dl.list_line_odd{
-		background: #f8b0f8;
+		background: #B0F8B9;
 	}
 }
